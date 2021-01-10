@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 import Layout from '../components/layout'
-import '../style/style.css';
 
-const IndexPage = () => (
-  <section> 
-    <Layout fBlockTitle="DDNet"
+const FirstPage = () => (
+    <section> 
+    <Layout fBlockTitle="PAGE1"
             fBlockDesc="Next-gen network initiative created on top of WebRTC" 
             sBlockImg="barbarian.png"
             sBlockTitle="There is text block with image"
@@ -20,4 +19,4 @@ const IndexPage = () => (
   </section>
 )
 
-export default IndexPage
+export default FirstPage;

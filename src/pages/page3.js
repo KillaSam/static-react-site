@@ -1,10 +1,9 @@
-import React from "react";
-import Layout from '../components/layout'
-import '../style/style.css';
+import React from 'react';
+import Layout from '../components/layout';
 
-const IndexPage = () => (
-  <section> 
-    <Layout fBlockTitle="DDNet"
+const ThirdPage = () => (
+    <section> 
+    <Layout fBlockTitle="PAGE3"
             fBlockDesc="Next-gen network initiative created on top of WebRTC" 
             sBlockImg="barbarian.png"
             sBlockTitle="There is text block with image"
@@ -20,4 +19,4 @@ const IndexPage = () => (
   </section>
 )
 
-export default IndexPage
+export default ThirdPage
