@@ -1,9 +1,8 @@
 import { Link } from "gatsby"
-import React from "react";
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Header(){
-
+function Header() {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -16,16 +15,14 @@ function Header(){
       }
     `
   )
-  
-  const defaultSiteTitle = site.siteMetadata?.title;
+
+  const defaultSiteTitle = site.siteMetadata?.title
 
   return (
     <header className="header">
       <div className="header__wrapper">
         <div className="header__wrapper-title">
-            <Link to="/">
-              {defaultSiteTitle}        
-            </Link>
+          <Link to="/">{defaultSiteTitle}</Link>
         </div>
         <nav className="header__wrapper__links">
           <Link to="/page1">Page1</Link>
