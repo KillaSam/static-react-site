@@ -31,6 +31,8 @@ export default function Layout({
     </span>
   ))
 
+
+
   const allImages = useStaticQuery(
     graphql`
       query MyQuery {
@@ -50,7 +52,7 @@ export default function Layout({
   )
 
   return (
-    <div>
+    <>
       <Header />
       <div className="mainPart">
         <div className="mainPart-title">{fBlockTitle}</div>
@@ -119,6 +121,6 @@ export default function Layout({
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   )
 }

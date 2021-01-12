@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function Header() {
@@ -18,8 +19,11 @@ function Header() {
 
   const defaultSiteTitle = site.siteMetadata?.title
 
-  return (
+  return (    
     <header className="header">
+      <Helmet>
+        <title>{defaultSiteTitle}</title>
+      </Helmet>
       <div className="header__wrapper">
         <div className="header__wrapper-title">
           <Link to="/">{defaultSiteTitle}</Link>

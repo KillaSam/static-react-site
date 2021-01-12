@@ -3,6 +3,7 @@ module.exports = {
     title: `DDNet`,
     description: `Site for Vlados and his new kind of internet`
   },
+  pathPrefix: `/static-react-site`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -19,7 +20,7 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/`,
+        start_url: `.`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `standalone`,
